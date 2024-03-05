@@ -2,10 +2,11 @@
 // console.log(document.URL);
 // console.log(document.baseURI);
 // console.log(document.head);
-// console.log(document.body);
-// console.log(document.title);
+// console.log(document.body.id="summa");
+// console.log(document.title="joshi");
 // console.log(document.cookie);
 // console.log(document.domain);
+// console.log(document.body);
 
 
 // ============================================================
