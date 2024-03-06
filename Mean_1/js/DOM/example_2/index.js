@@ -125,3 +125,14 @@
 
 // ============================================================
 
+
+
+
+// ============================================================
+const headingElements = document.querySelectorAll(".heading");
+
+function changeContent() {
+    for (let i = 0; i < headingElements.length; i++) {
+        headingElements[i].innerHTML = "Cadd Cae Computers";
+    }
+}
