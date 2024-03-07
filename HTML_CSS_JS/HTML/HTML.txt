@@ -1,0 +1,150 @@
+h1 - h6
+
+p
+
+br hr
+
+
+Text Format Tags
+----------------
+
+<b> 		This is a physical tag, which is used to bold the text written between it.
+
+<strong> 	This is a logical tag, which tells the browser that the text is important.
+
+<i> 		This is a physical tag which is used to make text italic.
+
+<em> 		This is a logical tag which is used to display content in italic.
+
+<mark> 		This tag is used to highlight text.
+
+<u> 		This tag is used to underline text written between it.
+
+<strike> 	This tag is used to draw a strikethrough on a section of text.
+
+<sup> 		It displays the content slightly above the normal line.
+
+<sub> 		It displays the content slightly below the normal line.
+
+<del> 		This tag is used to display the deleted content.
+
+<ins> 		This tag displays the content which is added
+
+<big> 		This tag is used to increase the font size by one conventional unit.
+
+<small> 	This tag is used to decrease the font size by one unit from base font size.
+
+
+
+
+font    ==>     Attributes (color,face,size)
+
+hr      ==>     Attributes (size,color,noshade)
+
+body    ==>     Attributes (bgcolor,background,text)
+
+img     ==>     Attributes (width,height,src,alt)
+
+marquee ==>     Attributes (bgcolor,direction)
+
+a       ==>     Attributes (href,target)  target ==> _blank
+
+
+
+div ==> div element act like container
+
+q blockquote
+
+pre
+
+
+
+HTML Lists : ul(li) , ol(li) , dl(dt,dd)
+
+ol                      ul  
+---                     --
+types : 1,A,i,I        types : circle,square,disc 
+start : <int>
+
+
+
+
+
+
+img,video ==> Attributes(src,alt,height,width)
+
+ <audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> 
+
+
+ <video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video> 
+
+
+
+
+
+
+HTML Table
+
+table,tr,th,td ==> Attributes (border,width,height,cellspacing,cellpadding,bgcolor,bordercolor)
+
+
+
+
+details ==> summary ==> p
+  <details>
+        <summary>HTML</summary>
+            <p>This is Sample Text</p>
+</details>
+
+
+
+SELECT ==> obtion,obtiongroup(lable)
+
+
+
+
+
+
+
+HTML Form 
+
+label ==> Attributes(for)
+
+Attributes : method(GET,POST) , action
+
+input types  ==> Attributes(name,placeholder,value)
+-----------
+    1) text 
+    2) password
+    3) radio
+    4) checkbox
+    5) date
+    6) email
+    7) file
+    8) number
+    9) range
+    10) reset
+    11) submit
+    12) time
+
+Validation Attributes for from
+------------------------------
+    1) readonly
+    2) disabled 
+    3) size 
+    4) maxlength 
+    5) min
+    6) max
+    7) multiple 
+    8) required 
+    9) step
+    10) autofocus 
+    11) checked
