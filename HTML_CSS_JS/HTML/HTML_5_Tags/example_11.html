@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p><meter value="10" min="1" max="100"></meter></p>
+  </body>
+  <script>
+    const meter = document.getElementsByTagName("meter")[0];
+    let value = 1;
+    setInterval(() => {
+      value ++;
+      meter.value = value;
+    }, 100);
+  </script>
+</html>
