@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Doc</title>
+  </head>
+  <body>
+    <progress value="10" min="1" max="100"></progress>
+    <script>
+      const progress = document.getElementsByTagName("progress")[0];
+      let value = 1;
+      setInterval(() => {
+        value ++;
+        progress.value = value;
+      }, 100);
+    </script>
+  </body>
+</html>
