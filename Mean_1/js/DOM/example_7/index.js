@@ -116,3 +116,12 @@
 //   }
 // });
 //========================================================================
+
+
+
+const parent = document.getElementById("parent");
+const button = document.getElementById("button");
+
+button.onclick = () => {
+  parent.removeChild(parent.children[0]);
+}
