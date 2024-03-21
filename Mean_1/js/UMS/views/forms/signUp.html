@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../../public/css/signUp.css" />
+</head>
+
+<body>
+    <main id="container">
+        <form method="get">
+            <h1>Sign Up</h1>
+            <div class="input-group">
+                <label for="name">Username</label>
+                <input type="text" id="name" placeholder="Your username . . . ." name="name" />
+                <img src="../../public/images/icons/user-name-icon.png" alt="icon">
+                <p class="error-message"></p>
+            </div>
+            <div class="input-group">
+                <label for="name">Email</label>
+                <input type="text" id="email" placeholder="Your email . . . ." name="email" />
+                <img src="../../public/images/icons/email-icon.png" alt="icon">
+                <p class="error-message"></p>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Your password . . . ." name="password" />
+                <img src="../../public/images/icons/lock-icon.png" alt="icon">
+                <img src="../../public/images/icons/eye-close-icon.png" alt="icon" class="eye-icon">
+                <p class="error-message"></p>
+            </div>
+            <div class="input-group">
+                <label for="name">Confirm Password</label>
+                <input type="password" id="password" placeholder="Re-enter password . . . ." name="confirmPassword" />
+                <img src="../../public/images/icons/lock-icon.png" alt="icon">
+                <img src="../../public/images/icons/eye-close-icon.png" alt="icon" class="eye-icon">
+                <p class="error-message"></p>
+            </div>
+            <button>Sign up</button>
+            <a href="./login.html">Already have an account ? Login</a>
+        </form>
+    </main>
+    <script src="../../public/js/sign-up.js" type="module"></script>
+</body>
+
+</html>

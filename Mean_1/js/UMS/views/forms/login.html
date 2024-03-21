@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../../public/css/login.css" />
+</head>
+
+<body>
+    <main id="container">
+        <form method="get">
+            <h1>Login</h1>
+            <div class="input-group">
+                <label for="name">Username</label>
+                <input type="text" id="name" placeholder="Your username or email . . . ." name="name" />
+                <img src="../../public/images/icons/user-name-icon.png" alt="icon">
+                <p class="error-message"></p>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Your password . . . ." name="password" />
+                <img src="../../public/images/icons/lock-icon.png" alt="icon">
+                <img src="../../public/images/icons/eye-close-icon.png" alt="icon" class="eye-icon">
+                <p class="error-message"></p>
+            </div>
+            <div class="remember-me-checkbox-group">
+                <div>
+                    <input type="checkbox" id="checkbox" name="rememberMe">
+                    <label for="checkbox">Remember Me</label>
+                </div>
+                <a href="">Forgot Password</a>
+            </div>
+            <button>Login</button>
+            <a href="./signUp.html">Don't have an account ? Sign up</a>
+        </form>
+    </main>
+</body>
+
+</html>
