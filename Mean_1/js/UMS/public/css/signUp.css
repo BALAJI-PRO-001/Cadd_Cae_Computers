@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --border-color: rgba(0, 0, 0, 0.264);
+    --error-color: red;
+    --color-for-a-tag: rgba(0, 0, 0, 0.593);
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.071);
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    height: 480px;
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.695);
+    display: flex;
+    flex-direction: column;
+}
+
+
+form > h1 {
+    font-family: fantasy;
+    color: rgba(0, 0, 0, 0.709);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+.input-group {
+    font-family: var(--font-family);
+    height: 80px;
+    width: 100%;
+    position: relative;
+}
+
+.input-group > label {
+    font-size: 14px;
+    margin-left: 5%;
+    font-weight: 550;
+    position: absolute;
+    top : -1px;
+}
+
+.input-group > input {
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    height: 40px;
+    width: 90%;
+    text-indent: 40px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.043);
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-group > input::placeholder {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.input-group > img {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top : 50%;
+    left : 8%;
+    transform: translateY(-50%);
+}
+
+.input-group > .eye-icon{
+    left : 85%;
+    height: 18px;
+    width: 18px;
+}
+
+
+
+.input-group > .error-message {
+    font-size: 12px;
+    margin-left: 5%;
+    color : var(--error-color);
+    font-weight: 550;
+    position: absolute;
+    bottom: 4px;
+}
+
+
+
+button {
+    width: 90%;
+    align-self: center;
+    height: 40px;
+    color: white;
+    background-color: rgb(236, 156, 7);
+    border: none;
+    border-radius: 5px;
+    font-weight: 550;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+
+form > a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    margin-top: 13px;
+    text-align: center;
+    color: var(--color-for-a-tag);
+    font-weight: 550;
+    font-size: 14px;
+}
+
+
+form > a:hover{
+   color : blue;
+   transition: 300ms;
+}
