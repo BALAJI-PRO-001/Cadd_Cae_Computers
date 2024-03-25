@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      #container {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+         /*  
+          Syntax :
+          --------
+          box-shadow: <right-offset>px | %  <bottom-offset>px | %  <blur>px | %  <color> ;
+          box-shadow: -<left-offset>px | %  -<top-offset>px | %  <blur>px | %  <color> ;
+          box-shadow: <right-offset>px | %  <bottom-offset>px | %  <blur>px | %  <color>,
+                        -<left-offset>px | %  -<top-offset>px | %  <blur>px | %  <color> ;
+            
+        */
+
+        box-shadow: 2px 2px 4px black;
+        box-shadow: -2px -2px 4px black;
+        box-shadow: 2px 2px 4px black, -2px -2px 4px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+</html>
