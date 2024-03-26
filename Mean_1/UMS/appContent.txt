@@ -1,0 +1,18 @@
+Error Messages
+---------------
+Name cannot be empty . . . .
+Name cannot contain numeric characters . . . .
+Name cannot contain special characters . . . .
+
+Password cannot be empty . . . . 
+Password must contain at least one uppercase letter . . . .
+Password must contain at least one numeric character . . . .
+Password must contain at least one special character . . . .
+Password must be 8 characters or longer . . . .
+Password and Confirm Password do not match . . . . 
+
+Email cannot be empty . . . .
+Invalid email address. Please enter a valid email . . . . .
+
+
+

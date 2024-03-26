@@ -17,6 +17,7 @@ imgElements[0].addEventListener("click", () => {
     "/public/images/icons/eye-close-icon.png", 
     "/public/images/icons/eye-open-icon.png"
   );
+  commonFunction.setType(inputElements[2], "password", "text");
 });
      
 
@@ -26,6 +27,7 @@ imgElements[1].addEventListener("click", () => {
     "/public/images/icons/eye-close-icon.png", 
     "/public/images/icons/eye-open-icon.png"
   );
+  commonFunction.setType(inputElements[3], "password", "text");
 });
 
 

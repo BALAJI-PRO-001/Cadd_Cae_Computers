@@ -24,4 +24,12 @@ export default class UserInterFace {
   }
 
 
+  setMessage(element, message) {
+    if (element) {
+      element.innerHTML = message;
+    } else {
+      throw new Error("Given element is null ...");
+    }
+  }
+
 }

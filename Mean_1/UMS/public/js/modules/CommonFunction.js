@@ -14,5 +14,17 @@ export default class CommonFunction {
     }
     return true;
   }
+
+  setType(element, oldType, newType) {
+    if (element) {
+      if (element.type.match(oldType)) {
+        element.type = newType;
+      } else {
+        element.type = oldType;
+      }
+    } else {
+      throw new Error("Given element is null ...");
+    }
+  }
   
 }
