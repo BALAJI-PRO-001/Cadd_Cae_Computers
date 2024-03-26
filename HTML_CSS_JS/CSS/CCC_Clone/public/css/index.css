@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 120px;
+  width: 100%;
+  border: 2px solid black;
+  position: relative;
+}
+
+header .logo {
+  height: inherit;
+  width: 400px;
+  margin-left: 150px;
+  display: inline-block;
+  position: absolute;
+}
+
+header .logo > img {
+ margin-top: 10px;
+}
+
+header .navbar {
+  height: inherit;
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+}
+
+header .navbar > a {
+  text-decoration: none;
+  line-height: 120px;
+  margin-left: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: 550;
+  transition: 300ms;
+}
+
+header .navbar > a:hover {
+  color: blue;
+}
