@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      #container {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        position: absolute;
+
+        animation-name: myAnimation;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-fill-mode: backwards;
+        animation-fill-mode: both;
+      }
+
+
+      @keyframes myAnimation {
+        from {
+          top: 0px;
+          left: 0px;
+        }
+        to {
+          top: 0px;
+          left: 400px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+</html>
