@@ -10,6 +10,9 @@ const signupForm = document.forms[0];
 const imgElements = signupForm.querySelectorAll(".eye-icon");
 const inputElements = signupForm.querySelectorAll("input");
 
+/* reset form */
+commonFunction.resetForm(signupForm);
+
 
 imgElements[0].addEventListener("click", () => {
   ui.setIcon(
@@ -44,7 +47,7 @@ for (let inputElement of inputElements) {
       validator.isvalidPassword(inputElement);
     }
     else if (inputElement.name == "confirmPassword") {
-      validator.isvalidConfirmPassword(inputElement);
+      validator.isvalidConfirmPassword(inputElement, inputElements[2].value.trim());
     }
   });
 }
@@ -55,12 +58,16 @@ for (let inputElement of inputElements) {
 signupForm.querySelector("button").addEventListener("click", (event) => {
   let booleans = [];
   for (let inputElement of inputElements) {
-    if (inputElement.name == "name") booleans.push(validator.isvalidName(inputElement));
-    else if (inputElement.name == "email") booleans.push(validator.isvalidEmail(inputElement));
-    else if (inputElement.name == "password") booleans.push(validator.isvalidPassword(inputElement));
-    else if (inputElement.name == "confirmPassword") booleans.push(validator.isvalidConfirmPassword(inputElement));
+    if (inputElement.name == "name") 
+      booleans.push(validator.isvalidName(inputElement));
+    else if (inputElement.name == "email") 
+      booleans.push(validator.isvalidEmail(inputElement));
+    else if (inputElement.name == "password") 
+      booleans.push(validator.isvalidPassword(inputElement));
+    else if (inputElement.name == "confirmPassword") 
+      booleans.push(validator.isvalidConfirmPassword(inputElement, inputElements[2].value.trim()));
   }
-  
+
   if (!commonFunction.isTrue(booleans)) event.preventDefault();
   event.stopPropagation();
 

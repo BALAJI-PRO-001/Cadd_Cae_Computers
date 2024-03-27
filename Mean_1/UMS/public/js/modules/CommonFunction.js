@@ -27,4 +27,13 @@ export default class CommonFunction {
     }
   }
   
+
+  resetForm(formElement) {
+    if (formElement) {
+      formElement.reset();
+    } else {
+      throw new Error("Given element is null ...");
+    }
+  }
+
 }

@@ -65,6 +65,7 @@ export default class Validator {
 
       ui.setBorder(inputElement, ui.BORDER_1PX_TRANSPARENT);
       ui.setMessage(errorElement, "");
+      return true;
 
     } else {
       throw new Error("Given element is null ...");
@@ -109,6 +110,7 @@ export default class Validator {
 
       ui.setBorder(inputElement, ui.BORDER_1PX_TRANSPARENT);
       ui.setMessage(errorElement, "");
+      return true;
 
     } else {
       throw new Error("Given element is null ...");
@@ -116,7 +118,7 @@ export default class Validator {
   }
 
 
-  isvalidConfirmPassword(inputElement) {
+  isvalidConfirmPassword(inputElement, password) {
     if (inputElement) {
       const value = inputElement.value.trim();
       const errorElement = commonFunction.getSibling(inputElement, "p");
@@ -125,11 +127,18 @@ export default class Validator {
         ui.setBorder(inputElement, ui.BORDER_1PX_RED);
         ui.setMessage(errorElement, "Confirm Password cannot be empty . . . .");
         return false;
-      } else {
-        ui.setBorder(inputElement, ui.BORDER_1PX_TRANSPARENT);
-        ui.setMessage(errorElement, "");
-        return true;
+      } 
+
+      if (value != password) {
+        ui.setBorder(inputElement, ui.BORDER_1PX_RED);
+        ui.setMessage(errorElement, "Password and Confirm Password do not match . . . . ");
+        return false;
       }
+
+      ui.setBorder(inputElement, ui.BORDER_1PX_TRANSPARENT);
+      ui.setMessage(errorElement, "");
+      return true;
+
     } else {
       throw new Error("Given element is null ...");
     }
