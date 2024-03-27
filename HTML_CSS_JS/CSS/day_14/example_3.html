@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        position: absolute;
+      }
+      #box-1 {
+        background-color: red;
+        top: 40%;
+        left: 40%;
+        z-index: 10;
+      }
+      #box-2 {
+        background-color: yellow;
+        top: 44%;
+        left: 44%;
+        z-index: 15;
+      }
+      #box-3 {
+        background-color: blue;
+        top: 48%;
+        left: 48%;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+  </body>
+</html>
