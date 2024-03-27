@@ -16,7 +16,7 @@ body {
 
 
 form {
-  height: 500px;
+  height: 480px;
   width: 400px;
   position: absolute;
   top: 50%;
@@ -28,11 +28,12 @@ form {
 }
 
 form > h1 {
-  font-family: var(--font-family);
+  font-family: fantasy;
+  color: rgba(0, 0, 0, 0.709);
+  font-size: 25px;
   text-align: center;
-  font-size: 24px;
-  font-weight: 550;
   margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 
@@ -45,8 +46,9 @@ form .input-group {
 
 form .input-group > label {
   font-family: var(--font-family);
-  font-size: 18px;
+  font-size: 15px;
   margin-left: 5%;
+  font-weight: 550;
 }
 
 form .input-group > input {
@@ -58,7 +60,7 @@ form .input-group > input {
   height: 40px;
   border: none;
   outline: none;
-  background-color: rgba(128, 128, 128, 0.152);
+  background-color: rgba(0, 0, 0, 0.043);
   border-radius: 6px;
   text-indent: 30px;
   letter-spacing: 1px;
