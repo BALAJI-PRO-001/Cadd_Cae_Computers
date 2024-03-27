@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      #container {
+        height: 200px;
+        width: 600px;
+        background-color: red;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+
+        animation-name: myAnimation;
+        animation-duration: 0.3s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes myAnimation {
+        from {
+          transform: rotate(999999999deg);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+</html>
