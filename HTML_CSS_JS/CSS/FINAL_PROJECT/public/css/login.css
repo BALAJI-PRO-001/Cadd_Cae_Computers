@@ -17,7 +17,7 @@ body {
 
 
 form {
-  height: 480px;
+  height: 390px;
   width: 400px;
   position: absolute;
   top: 50%;
@@ -128,4 +128,12 @@ form a {
 
 form a:hover {
   color: blue;
+}
+
+
+.remember-me-checkbox-group {
+  height: 40px;
+  width: 100%;
+  border: 2px solid red;
+  margin-top: 10px;
 }
