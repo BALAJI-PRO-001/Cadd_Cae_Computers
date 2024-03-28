@@ -114,14 +114,14 @@ form button {
   font-weight: 550;
 }
 
-form a {
+form > a {
   text-decoration: none;
   font-family: var(--font-family);
   font-size: 14px;
   font-weight: 550;
   display: block;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 27px;
   color: black;
   transition: 300ms;
 }
@@ -134,6 +134,30 @@ form a:hover {
 .remember-me-checkbox-group {
   height: 40px;
   width: 100%;
-  border: 2px solid red;
   margin-top: 10px;
+  font-size: 14px;
+  font-family: var(--font-family);
+  font-weight: 550;
+  color: rgba(0, 0, 0, 0.593);
+  position: relative;
 }
+
+.remember-me-checkbox-group > input {
+  margin-left: 5%;
+}
+
+
+.remember-me-checkbox-group > label:hover{
+  color: black;
+}
+
+.remember-me-checkbox-group > a {
+  text-decoration: none;
+  font-family: var(--font-family);
+  color: rgba(0, 0, 0, 0.593);
+  position: absolute;
+  right: 10px;
+  top: 0;
+  right:6%;
+}
+
